@@ -1,0 +1,145 @@
+.path-login {
+    #page {
+        max-width: 100%;
+    }
+
+    .login-container {
+        .login-logo {
+            justify-content: left;
+        }
+    }
+}
+
+
+
+#loginbtn{
+    margin-top: 2rem;
+    color: white;
+    background-color: #146C94;
+}
+
+#id_submitbutton{
+    color: white;
+    background-color: #146C94;
+}
+
+#page-login-index {
+    .login-container {
+        background-color: initial;
+        box-shadow: none;
+        padding: 0;
+
+        .loginform {
+            margin: 0 auto;
+            background-color: #AFD3E2;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+
+            .form-control{
+                color: black;
+                background-color: white;
+                border: white;
+            }
+
+            .left-column {
+                height: max-content;
+                padding-left: 2rem;
+
+                .column-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+            }
+
+            .right-column {
+                padding-right: 2rem;
+            }
+        }
+    }
+}
+
+#page-login-signup {
+    #page-content {
+        padding-top: 2rem;
+
+        .login-container{
+            background-color: #AFD3E2;
+        }
+    }
+
+    
+}
+
+@include media-breakpoint-up(md) {
+    #page-login-index {
+        .login-container {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .loginform {
+            width: 40%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    #page-login-index {
+        #page {
+            padding-top: 1rem;
+        }
+
+        .login-container {
+            .loginform {
+                .left-column {
+                    padding-right: 0;
+                }
+
+                .right-column {
+                    padding-left: 0;
+                    border-left: none;
+
+                    .column-content {
+                        display: block;
+
+                        .login-heading {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #page-login-signup #page-content {
+        padding-top: 15px;
+
+        .login-container {
+            max-width: 100%;
+            padding: 1rem;
+            background-color: #AFD3E2;
+
+            .mform {
+                padding: 0;
+
+                #fgroup_id_buttonar {
+                    .col-md-9 {
+                        .d-flex.flex-wrap.align-items-center {
+                            flex-direction: column;
+
+                            #id_submitbutton {
+                                margin-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
